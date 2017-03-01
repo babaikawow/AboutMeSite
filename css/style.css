@@ -1,0 +1,400 @@
+
+*{
+	margin: 0px;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ body{
+ 	font-family: 'Blogger Sans';
+ 	color:#464544;
+ }
+
+.box {
+	padding-top:0.1px;
+	width: 100%;
+	margin: 0 auto;
+	min-height: 1000px;
+}
+
+
+ /* Класи стилізації та сітки*/
+
+.container{ 
+	width: 960px;
+	margin: 0 auto;
+}
+
+article{
+	display: block;
+	width:100%;
+	min-height:500px;
+	background-color: #F5F1EE;
+
+}
+
+	.box article:first-of-type{
+		margin-top:60px;
+	}
+
+
+.col-3{
+	-ms-flex: 3 0 250px;
+	-webkit-flex: 3 0 250px;
+	-moz-flex: 3 0 250px;
+	flex: 3 0 300px;
+}
+
+.col-9{ 
+	-ms-flex: 9 0 350px;
+	-webkit-flex: 9 0 350px;
+	-moz-flex: 9 0 350px;
+	flex: 9 0 350px;
+}
+
+.flex-container{
+	display: -webkit-box;      
+	display: -moz-box;         
+	display: -ms-flexbox;      
+	display: -webkit-flex;    
+	display: flex;   
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+.flex-block{
+	padding: 5px;
+}
+
+.block{
+	display:block;
+}
+
+.inline-block{
+	display: inline-block;
+}
+
+.clear{
+	clear: both;
+	content: "";  
+	visibility: hidden; 
+	line-height: 0; 
+	height: 0; 
+	margin: 0;
+ 	padding: 0; 
+}
+
+.center{
+	text-align: center;
+	padding: 10px 5px;
+}
+
+.left{
+	text-align:left;
+	padding: 10px 5px;
+	text-indent: 15px;
+}
+
+.color-light{
+	color:#F7F5F6;
+}
+
+.color-dark{
+	color:#464544;
+}
+
+/*Paralax blocks #dream && #developParalax*/
+
+.parallax {
+	height:500px;
+	position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+	.parallax .container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	}
+
+/*Перевизначення осн.елем.*/
+a{
+	text-decoration: none;
+	border: none;
+	outline: none;
+	/*color:#464544;*/
+	color:#F5D070;
+}
+
+p{
+	font-family: 'Blogger Sans', 'Verdana';
+	font-size: 1em;
+}
+
+h1{
+	margin: 15px 0px;
+	font-size: 3em;
+} 
+
+h2{
+	margin:5px;
+	font-size: 2em;
+}
+
+h3{
+	font-size: 1.8em;
+	
+}
+
+h4{
+	font-family: inherit;
+	font-size: 1.3em;
+}
+
+img{
+	border:0;
+	margin:5px;
+}
+
+i.fa{
+	margin:15px 5px;
+	color:#fff;
+}
+
+.img-rounded{
+	border-radius: 30%;
+	border:2px solid #EDEEEB;
+}
+
+.img-round{
+	border-radius: 50%;
+	border:2px solid #EDEEEB;
+}
+
+
+
+
+
+/*************************
+Послідовна стилізація сторінки
+*/
+
+/*Pre-loader !Додати гіфку!  								!!!*/											
+
+#page-preloader {
+ position: fixed;
+ left: 0;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ background: #080808;
+ z-index: 100500;
+ opacity:0.99;
+}
+
+	#page-preloader .spinner {
+	 width: 160px;
+	 height: 160px;
+	 position: absolute;
+	 left: 50%;
+	 top: 50%;
+	 background: url('../img/giphy.gif') no-repeat 50% 50%;
+	 background-size: cover;
+	 margin: -80px 0 0 -80px;
+	 text-align: center;
+	 font-family: 'Beer';
+	 color: #F8E50F;
+	}
+
+
+
+/* шапка    Стилі меню для футера та шапки 				!!!
+********************/
+
+
+
+header{
+	display: block;
+	position: fixed;
+	z-index: 10000;
+	height:60px;
+	width:100%;
+	background: rgba(50, 49, 48, 0.9);
+}
+
+	header .container{
+		height:60px;
+	}
+		.logo{
+			display: inline-block;
+			width:220px;
+			height:60px;
+			background: url('../img/logo.png') no-repeat ;
+		}
+
+		/* header && footer menu***** */ 
+		header>.container>nav{
+			float: right;
+			height: 60px;
+		}
+
+			
+			nav ul{
+				list-style: none;
+				height: 100%;
+				font-size: 0;
+			}
+
+			header nav li, 
+			footer nav li{
+				display: inline-block;
+				height: 100%;
+				font-family: 'Capture it';
+				font-size: 16px;
+				list-style-type: none;
+				line-height: 60px;
+				text-transform: uppercase;
+
+			}
+
+			#hideMenu{
+				display:none;
+				position: absolute;
+				top:60px;
+				right:0;
+				width:50%;
+			}
+
+			#hideMenu li{
+				display: block;
+				text-align: center;
+				font-family: 'Capture it';
+				font-size: 1em;
+				list-style-type: none;
+				line-height: 60px;
+				text-transform: uppercase;
+				background: rgba(50, 49, 48, 0.9);
+
+			}
+
+			nav li a:hover,
+			nav li a :hover,
+			#hideMenu li a:hover{
+			/*background: rgba(52, 50, 50, 0.7);	*/
+			color: #F5D070;
+			}
+
+			ul a {
+				display: block;
+				padding: 0px 15px;	
+				color:#F7F5F6;
+						}
+			#dropBut{
+				display: none;
+				float:right;
+				padding: 5px;
+				margin:15px 0px 15px 0px;
+				height: 30px;
+				width: 60px;
+				border: none;
+				border-radius: 5px;
+				color: #F7F5F6;
+				background: #3B3B3B;
+
+			}
+
+			#dropBut:hover{
+					background: rgba(50, 49, 48, 0.9);
+}
+/*Hi block*/
+#hiblock{
+	font-family: 'Beer money';
+	padding: 0px 0px 250px 0px;
+	background: url(../img/hi_image.jpg) no-repeat;
+	background-size: cover;
+	background-position:  center bottom;
+}
+
+	.highlightText{
+		background: rgba( 233, 223, 222, 0.5);
+		border-radius: 5%;
+	}
+	
+
+
+/*About me block*/
+
+
+	#aboutMe h4{
+		margin-bottom: 60px;
+	}
+
+
+
+/*Dream block*/
+#dream{
+ 	background-image: url("../img/dream.jpeg");
+}
+
+/*Dev paralax block*/
+#developParalax{
+	background-image: url("../img/developer.jpg");
+}
+
+
+
+
+/*Hobby block*/
+
+ .thumbnail{
+ 	margin: 0 auto 25px;
+	display:block;
+}
+	.thumbnail img{
+		margin: 10px 0px;
+		height: auto;
+		width: 	90%;
+	}
+
+
+
+/*Develop block*/
+
+.bar{
+	margin:0px auto 5px;
+	width:100%;
+	background-color: #C1C1C1;
+}
+	.bar-scope{
+		padding:5px 0px;
+		text-align: center;
+		line-height: 1em;
+		color:#F7F5F6;
+		background-color: #F5D070;
+		
+	}
+
+/*Footer block*/
+ footer{
+	display: block;
+	min-height: 70px; 
+	background: #464544;
+}
+
+	footer:hover{
+		background: #090909;
+	}
+
+
+
+

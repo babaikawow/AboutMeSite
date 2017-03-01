@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- css -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+	<!-- js  -->
+  	<script src="js/jQuery.js"></script>
+  	<script src="js/translation.js" async ></script>
+  	<script src="js/scripts.js"></script>  <!-- -->
+	<script>
+		$(window).on('load', function () {
+		 	var $preloader = $('#page-preloader'),
+				$spinner = $preloader.find('.spinner');
+				$spinner.fadeOut();
+				$preloader.delay(350).fadeOut('slow');
+		});
+	</script>
+	<title>Dilay Vasya</title>
+</head>
+
+<body>
+
+	<div id="page-preloader"><span class="spinner">Завантажуємось...</span></div>
+
+	<div class="box"> 
+		<header>
+			<div class="container color-light">
+				<div class="logo"></div>
+				<nav id="descMenu">
+					<ul>
+			
+						<li><a href="#AaboutMe">Про мене</a></li>
+						<li><a href="#AmyHobby">Мої хоббі </a></li>	
+						<li><a href="#Adevelop">Веб-розробка</a></li>
+						<li><a href="#Acontact">Контакти</a></li>
+
+					</ul>
+				</nav>
+				<button id="dropBut">Menu</button>
+				<div class="clear"></div>
+				<div id="hideMenu">
+					<ul>
+
+						<li><a href="#AaboutMe">Про мене</a></li>
+						<li><a href="#AmyHobby">Мої хоббі </a></li>	
+						<li><a href="#Adevelop">Веб-розробка</a></li>
+						<li><a href="#Acontact">Контакти</a></li>
+
+
+					</ul>
+				</div>
+
+			</div>
+		</header>
+<!-- /header -->
+
+		<div class="clear"></div>	
+
+<!-- hiBlock -->
+		<article id="hiblock">
+			<div class="container center" >
+					
+				
+					<h1>Привіт, я Вася</h1>
+					<img  class="img-rounded" src="img/me1.jpg" alt="It`s me"  style="width:60%; height:auto">
+					<div class="highlightText" >
+
+						<h3>Я - "Homo studenticus"</h3> 
+						<h4 >А ще трішки мандрівник, трішки спортсмен,  трішки розробник, трішки "сова", трішки екстраверт і трішки інтроверт... Люблю: море, ананаси, захід сонця, пробіжки, гру на гітарі (пробачте сусіди),
+						 щирі розмови, гумор та динамічну типізацію :D... </h4>
+
+					</div>
+			
+			</div>
+
+		</article>
+
+<!-- aboutme -->
+		<article id="aboutMe">
+			<a id="AaboutMe"></a>
+			<div class="container center">
+
+
+					<h1>Про мене</h1>
+					<h4> Я народився, побачив світло в кінці тунелю, а потім зростав у чарівному місті Тернополі. На разі я є студентом Тернопільського національного університету ім. І. Пулюя. Навчаюся на ІV курсі за спеціальністю "Комп'ютерні науки". Отримую задоволення від процесу навчання та результатів застосування своїх знань і навичок. У вільний від навчання час займаюсь грою на гітарі, подорожую, програмую, гуляю, сплю, читаю цікаві книги та статті. Полюбляю вечірні пробіжки у місцевому парку та купаня в джерельній воді. Зачарований морем та горами. Люблю розглядати в простому складне і навпаки.</h4>
+			
+					<img  src="img/aboutf.png" alt="Мої фото" style="width:100%; height:auto;">
+			
+					
+			
+			
+			</div>
+			
+		</article>
+<!-- /aboutme -->
+
+<!-- dream paralax -->
+		<article id="dream" class="parallax">
+
+			
+				<div class="container center">
+					<h1 class="color-light">Мрію побувати на всіх континентах :D</h1>
+				</div>
+			
+			
+		</article>
+<!-- /dream paralax -->
+
+<!-- hobby -->
+		<article id="hobby">  
+			<div class=" container center">
+				<a id="AmyHobby"></a>
+				<h1>Мої хоббі</h1>
+				<div class=" flex-container ">
+					<div class=" flex-block col-3">
+						<div class="thumbnail" >
+							<h2>Гітара</h2>
+							<img src="img/guitar.jpg" class="img-rounded" alt="Гітара">
+							
+							<p> Уже як рік я освоюю гру на гітарі. Уже як рік мрія перетворилася в реальність. Уже як рік сусіди іноді постукують по стінах в ритмі рок-н-ролу. Це заняття приносить мені велике задоволення і радість, радість творити музику, дарувати її оточуючим. З нетерпінням чекаю літніх вечорів і посиденьок біля багаття... </p>
+							
+						</div>
+					</div>
+					<div class=" flex-block col-3">
+						<div class="thumbnail" >
+
+							<h2>Мандри</h2>
+
+							<p>Як казав Марк Твен: «Тільки про дві речі ми будемо шкодувати на смертному одрі - що мало любили і мало подорожували».</i> Я слухаю Марка щоби згодом не жаліти. Подорожжі допомагають мені краще пізнати життя, себе, оточуючих, світ в цілому. Люблю подоружувати автостопом і не тільки. Мрію в майбутньому активніше подорожувати та відвідати Ірландію, відчути дух "старої європи", проплисти на каяках по фьорду, розстанути в красі Патагонії... З нетерпінням чекаю невеличкої подорожжі в Австрію і баварських ковбасок).</p>
+
+							<img src="img/travel.jpeg"  class="img-rounded"alt="Мандри">
+
+						</div>
+					</div>
+					<div class=" flex-block col-3">
+						<div class="thumbnail" >
+							<h2>Читання</h2>
+							<img src="img/book.jpeg"  class="img-rounded"alt="Книги">
+							
+							<p> Одним із моїх хоббі чи необхідністю є читання книг та різноманітної літератури. Читаю як правило  літературу від художньої до технічної. Полюбляю читати за можливість довідатися з книги щось нове для себе, можливість зануритися в книгу й забути про все навколо, можливість споглядати не лише на події й діалоги, але й думки. Люблю коли під час читання відкриваються очі на те чого раніще не бачив і не розумів, коли знання і досвід перейнятий з книги стає у пригоді в моєму житті.  </p>
+							
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</article>
+<!-- /Хоббі -->
+
+<!-- devParalax -->
+		<article id="developParalax" class="parallax">
+
+				<div class="container center">
+					<h2>А ще я трішки програмую і займаюсь бігом</h2>
+				</div>
+			
+		</article>
+<!-- /devparalax -->
+
+<!-- develop -->
+		<article id="develop">
+			<a id="Adevelop"></a>
+			<div class=" container center">
+				<h1>Веб розробка і Ваcиль</h1>
+				<div class=" flex-container left">
+					<div class=" flex-block col-3">
+						
+						<p>Першим моїм кроком у світ програмування були алгоритми. Здавалося захоплюючим описувати блок-схемами різномінатні алгоритми вирішення певних завдань. Перша мова програмування - Pascal. На разі цікавлюсь Front-end технологіями HTML, CSS, JS. Освоюю адаптивну та резинову верстку та активно її застосовую, вивчаю CSS-фреймворк Bootsrap. Мені подобається динамічна типізація та Javascript за можливість використання як на сервері так і на клієнті. Володію основами AJAX та PHP.  Для закріплення вивченого верстою макети, створив СКД з асинхроним обміном данних, транслятор чисел в словесне представлення(<a  onclick="translator();">Спробувати</a>)... Відчуваю бажання розвиватися і навчатися в даному напрямку, в напрямку Javascript.</p>
+						
+					</div>
+					<div class=" flex-block col-9 ">
+						<span>HTML5/CSS3</span>	
+						<div class="bar">
+							<div class="bar-scope" style="width:70%">70%</div>
+						</div>
+
+						<span>Responsive Design</span>	
+						<div class="bar">
+							<div class="bar-scope" style="width:75%">75%</div>
+						</div>
+
+						<span>Bootstrap</span>	
+						<div class="bar">
+							<div class="bar-scope" style="width:60%">60%</div>
+						</div>
+
+						<span>Js/Jquery</span>	
+						<div class="bar">
+							<div class="bar-scope" style="width:55%">55%</div>
+						</div>
+
+						<span>Ajax</span>	
+						<div class="bar">
+							<div class="bar-scope" style="width:40%">40%</div>
+						</div>
+
+						<span>Php</span>	
+						<div class="bar">
+							<div class="bar-scope" style="width:45%">45%</div>
+						</div>
+						
+						
+					</div>
+
+				</div>
+				<img src="img/barts.png" alt="bart" style="margin-bottom: -15px; width:30%; height:auto;">
+			</div>
+
+		</article> 
+<!-- /develop -->
+
+<!-- footer -->
+		<footer class="center color-light">
+			<div class="container">
+				<a id="Acontact"></a>
+				<!-- <h4>Контакти</h4> -->
+				<div class="flex-container center">
+					<div class="flex-block col-3 center">
+						<p><i class="fa fa-envelope-o " ></i>babaikawow@gmail.com</p>
+						<p><i class="fa fa-phone" ></i>+380974086835</p>
+						<a href="github.com/babaikawow/" >
+							<i class="fa fa-github fa-2x" onmouseover="this.style.color='#D2D2D2'" onmouseout="this.style.color=''"></i>
+						</a>
+						<a href="https://vk.com/fididididid"> 
+							<i class="fa fa-vk fa-2x" onmouseover="this.style.color='#125583'" onmouseout="this.style.color=''"></i>
+						</a>
+						<a href="http://stackoverflow.com/users/7557133/babaikawow">
+							<i class="fa fa-stack-overflow  fa-2x" onmouseover="this.style.color='#EE7407'" onmouseout="this.style.color=''"></i>
+						</a>
+
+						<a><i class="fa fa-twitter fa-2x" onmouseover="this.style.color='#079FEE'" onmouseout="this.style.color=''"></i></a>
+						<a><i class="fa fa-linkedin fa-2x"onmouseover="this.style.color='#385ABA'" onmouseout="this.style.color=''"></i></a>
+ 
+						
+					</div>
+					<div class="flex-block col-3">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d2588.4988578229572!2d25.584134573312316!3d49.550609840560824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d49.5501313!2d25.5820115!5e0!3m2!1suk!2sua!4v1488324768669" height="300px" frameborder="0" style="border:6px solid #5F5F5F" allowfullscreen></iframe>
+						
+					</div>
+
+				</div>
+				<!-- <div> -->
+					<nav>
+						<ul>
+							<li><a href="#AaboutMe">Про мене</a></li>
+							<li><a href="#AmyHobby">Мої хоббі </a></li>	
+							<li><a href="#Adevelop">Веб-розробка</a></li>
+							<li><a href="#Acontact">Контакти</a></li>
+
+						</ul>
+					</nav>
+					<span>by Dilay Vasyl</span>
+				<!-- </div> -->
+			</div>
+		</footer> <!-- /footer -->
+		
+	</div> <!-- end .box -->
+
+</body>
+</html>
