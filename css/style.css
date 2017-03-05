@@ -228,7 +228,7 @@ header{
 	position: fixed;
 	z-index: 10000;
 	height:60px;
-	width:100%;
+	width:100vw;
 	background: rgba(50, 49, 48, 0.9);
 }
 
